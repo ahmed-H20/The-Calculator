@@ -17,3 +17,10 @@ function divide(x,y) {
 }
 
 let firstNum,secondNum,operator;
+
+function operate(x,y,operator) {
+    if (operator == '+') return add(x,y);
+    if (operator == '-') return subtract(x,y);
+    if (operator == '*') return multiply(x,y);
+    if (operator == '/') return divide(x,y);    
+}
