@@ -16,4 +16,4 @@ function divide(x,y) {
     return x / y;
 }
 
-let firstNum;
+let firstNum,secondNum,operator;
