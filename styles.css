@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-color: #EFEEEC;
+    
+}
+
+.mobileframe{   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 600px;
+    height: 800px;
+    padding: 20px;    
+    background-image: url("iphone6_frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    width: 343px;
+    height: 618px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .display{
+    width: 355px;
+    height: 150px;
+}
+
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .buttons button{
+    font-size: 2em;    
+    border: none;
+    color: #EFEEEC;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    margin: 5px 3px;
+}
+
+.container .buttons div{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons-footer{
+    width: 100%;
+    display: flex;
+}
+
+#equal{
+    flex-grow: 1;
+}
+
+.buttons-main-main{
+    flex-direction: column;
+}
+
+.buttons-main button, .buttons-footer button{
+    background-color: #333333;
+}
+
+.buttons-main-main-numbers{
+    flex-wrap: wrap;
+}
+
+.buttons-main-side{
+    flex-direction: column;
+}
+
+.buttons-main-side button,#equal{
+    background-color: #FF9F0A;
+}
+
+.buttons-main-main-top button{
+    background-color: #A5A5A5;
+}
