@@ -18,6 +18,7 @@ function divide(x,y) {
 
 let firstNum,secondNum,operator;
 let current_num = '';
+let result = '';
 
 function operate(x,y,operator) {
     if (operator == '+') return add(x,y);
@@ -30,6 +31,11 @@ let display_num = document.querySelector(".display #current-input");
 
 function display(x) {    
     current_num += x;
-    firstNum = current_num;    
     display_num.textContent = current_num;
+    if ( x == '+' || x == '-' || x == '*' || x == '/'){
+        operator = x;
+        firstNum = current_num;                
+        current_num = '';
+    }
+    calculate();    
 }
