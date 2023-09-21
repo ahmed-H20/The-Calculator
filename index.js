@@ -18,7 +18,7 @@ function divide(x,y) {
 
 let firstNum,secondNum,operator;
 let current_num = '';
-let result = '';
+let result = 0;
 
 function operate(x,y,operator) {
     if (operator == '+') return add(x,y);
@@ -34,7 +34,7 @@ function display(x) {
     display_num.textContent = current_num;
     if ( x == '+' || x == '-' || x == '*' || x == '/'){
         operator = x;
-        firstNum = current_num;                
+        firstNum = current_num.split("").slice(0,current_num.length-1).join("");                
         current_num = '';
     }    
 }
