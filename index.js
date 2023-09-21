@@ -29,6 +29,7 @@ function operate(x,y,operator) {
 
 let display_num = document.querySelector(".display #current-input");
 let display_result = document.querySelector(".display #result");
+
 function display(x) {    
     current_num += x;
     display_num.textContent = current_num;
