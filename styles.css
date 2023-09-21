@@ -86,6 +86,9 @@ body{
     background-color: #A5A5A5;
 }
 
-p{
+.display p{
     color: #EFEEEC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    text-align: end;
 }
