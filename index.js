@@ -30,7 +30,8 @@ function operate(x,y,operator) {
 let display_num = document.querySelector(".display #current-input");
 let display_result = document.querySelector(".display #result");
 
-function display(x) {    
+function display(x) {
+    if (current_num.length == 17) return;   
     current_num += x;
     display_num.textContent = current_num;
     if ( x == '+' || x == '-' || x == '*' || x == '/'){
