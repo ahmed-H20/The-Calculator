@@ -45,3 +45,8 @@ function calculate() {
     result = operate(+firstNum,+current_num,operator);
     display_result.textContent = `${result}`;
 }
+
+function delete_num() {
+    current_num = current_num.split("").slice(0,current_num.length-1).join("");
+    display_num.textContent = current_num;
+}
