@@ -61,15 +61,15 @@ body{
     display: flex;
 }
 
-#equal{
+#zero-style{
     flex-grow: 1;
 }
 
-.buttons-main-main{
+.buttons-main-main,.buttons-main-side{
     flex-direction: column;
 }
 
-.buttons-main button, .buttons-footer button{
+.buttons-main button{
     background-color: #333333;
 }
 
@@ -77,11 +77,8 @@ body{
     flex-wrap: wrap;
 }
 
-.buttons-main-side{
-    flex-direction: column;
-}
 
-.buttons-main-side button,#equal{
+.buttons-main-side button{
     background-color: #FF9F0A;
 }
 
