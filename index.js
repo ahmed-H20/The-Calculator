@@ -41,8 +41,9 @@ function display(x) {
     
     
 
-    if (display_num.textContent.length == 17 || display_result.textContent.length == 17) {
+    if (display_num.textContent.length == 17 || display_result.textContent.length == 17) {        
         alert("Max digits is (17) digits");
+        delete_num();
         return;
     }   
 
