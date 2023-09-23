@@ -31,14 +31,27 @@ let display_num = document.querySelector(".display #current-input");
 let display_result = document.querySelector(".display #result");
 
 function display(x) {
-    if (current_num.length == 17) return;   
+    if (current_num.length == 17) {
+        alert("Max digits is (17) digits");
+        return;
+    };
     current_num += x;
     display_num.textContent = current_num;
     if ( x == '+' || x == '-' || x == '*' || x == '/'){
         operator = x;
-        firstNum = current_num.split("").slice(0,current_num.length-1).join("");                
-        current_num = '';
-    }    
+        if (result != 0){
+            operator = x;
+            firstNum = result;
+            current_num = result;
+            result = '';
+            display_result.textContent = result;
+        }
+        else{
+            firstNum = current_num.split("").slice(0,current_num.length-1).join("");                
+            current_num = '';
+        }
+    }
+           
 }
 
 function calculate() {
